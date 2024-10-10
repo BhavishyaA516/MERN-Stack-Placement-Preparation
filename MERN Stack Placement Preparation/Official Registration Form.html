@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px auto;
+            width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        p,h2 {
+            margin:10px;
+            text-align:center;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+
+    <p>Of course, all submitted information is kept in the strictest confidence.</p>
+    <p>You always retain control of your information with D. W. Simpson & Co.</p>
+    <p>Our services are always at no cost to you.</p>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="stateProvince">State/Province:</label>
+        <input type="text" id="stateProvince" name="stateProvince" required><br><br>
+
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" required><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="phoneHome">Phone (H):</label>
+        <input type="tel" id="phoneHome" name="phoneHome" required><br><br>
+
+        <label for="phoneWork">Phone (W):</label>
+        <input type="tel" id="phoneWork" name="phoneWork" required><br><br>
+
+        <label for="fax">Fax:</label>
+        <input type="tel" id="fax" name="fax"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName"><br><br>
+
+        <label for="desiredRegion">Desired Region:</label>
+        <select id="desiredRegion" name="desiredRegion">
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Professional designations earned:</label><br>
+        <input type="checkbox" id="collegeStudent" name="designations" value="College Student">
+        <label for="collegeStudent">College Student</label>
+        <input type="checkbox" id="actuarialStudent" name="designations" value="Actuarial Student">
+        <label for="actuarialStudent">Actuarial Student</label>
+        <input type="checkbox" id="acas" name="designations" value="ACAS">
+        <label for="acas">ACAS</label>
+        <input type="checkbox" id="fcas" name="designations" value="FCAS">
+        <label for="fcas">FCAS</label>
+        <input type="checkbox" id="asa" name="designations" value="ASA">
+        <label for="asa">ASA</label>
+        <input type="checkbox" id="fsaea" name="designations" value="FSAEA">
+        <label for="fsaea">FSAEA</label><br>
+        <label for="otherDesignations">Other Designations:</label>
+        <input type="text" id="otherDesignations" name="otherDesignations">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
